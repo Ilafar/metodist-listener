@@ -1,0 +1,24 @@
+Metodist Listener Qurulum Qaydası
+=================================
+
+Bu script Metodist portalında (metodist.edu.az) yeni bildirişləri yoxlayır və varsa Telegram-a göndərir.
+
+1. Python-un yüklü olduğundan əmin olun:
+   Əgər Python yoxdursa, https://www.python.org/downloads/ ünvanından yükləyib quraşdırın.
+   
+2. Lazımi paketləri yükləyin:
+   Qovluğun daxilində terminal (Command Prompt) açın və bu əmri yazın:
+   pip install -r requirements.txt
+   
+3. Scripti tənzimləyin:
+   `listener.py` faylını (məsələn, Notepad ilə) açın və yuxarı hissədəki məlumatları özünüzə uyğun dəyişdirin:
+   - UTIS = "SİZİN_UTİS_KODUNUZ"
+   - PASSWORD = "SİZİN_ŞİFRƏNİZ"
+   - TELEGRAM_BOT_TOKEN = "SİZİN_BOT_TOKENİNİZ" (Bunu Telegram-da @BotFather-dan yeni bot yaradaraq əldə edə bilərsiniz)
+   - TELEGRAM_CHAT_ID = "SİZİN_CHAT_ID_NİZ" (Bunu Telegram-da @getmyid_bot vasitəsilə öyrənə bilərsiniz)
+   
+4. Scripti işə salın:
+   Terminalda bu əmri yazın:
+   python listener.py
+   
+Script hər 5 dəqiqədən bir (CHECK_INTERVAL_SECONDS) sistemi yoxlayacaq və yeni bildiriş olduqda Telegram botunuz vasitəsilə sizə mesaj göndərəcək. İşini dayandırmaq üçün terminalda CTRL+C basa bilərsiniz.
