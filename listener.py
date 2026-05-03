@@ -131,7 +131,7 @@ def check_notifications():
             date = date_elem.text.strip() if date_elem else ""
             
             # Telegram-a göndəriləcək mesajın strukturu
-            message = f"🔔 <b>Yeni Bildiriş:</b>\n\n{text}\n\n<i>{date}</i>\n<a href='{href}'>Keçid et</a>"
+            message = f"🔔 <b>Metodist bildirişi :</b>\n\n{text}\n\n<i>{date}</i>\n<a href='{href}'>Keçid et</a>"
             send_telegram_message(message)
             
             new_notified_ids.append(notif_id)
